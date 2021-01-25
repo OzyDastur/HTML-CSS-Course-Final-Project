@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!--developed by: Cristian Bildea, Laurence Poirier, OSMAN MOHAMED and Monica Escobedo-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="engAGE Living Lab Digital Era Response (ELLDER) 
+    is an inclusive project of Concordia University that focuses on fostering and expressing 
+    the creative knowledge of older adults that ignites synergy for health and wellbeing."/>
+    <title>engAGE Living Lab Digital Era Response: SigitalSkillShare</title>
+    <link rel="stylesheet" href="styles/ellder.css" >
+    <link rel="stylesheet" href="styles/responsive.css" >
+    <link rel="shortcut-icon" href="images/icon_engage_1024.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/icon_engage_180px.png">
+    <link rel="icon" sizes="192x192" href="images/icon_engage_192px.png">
+    <link rel="icon" type="image/png" sizes="40x40" href="images/icon_engage_40px.png">
+    <!-- Maven Pro, Google fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Maven+Pro&display=swap" rel="stylesheet">     <!-- Quattrocento, Google fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Quattrocento+Sans&display=swap" rel="stylesheet">
+ 
+</head>
+<body>
+    <!-- Needed for FB to work on the rightSidebar -->
+    <div id="fb-root"></div>    
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v8.0" nonce="DSMg2jvS">
+    </script>
+    <!-- Needed for FB to work on the rightSidebar / ends here -->
+
+    <form id="digitalskillshare_rsvp_form" 
+        name="Digital Skill-share one-on-one | Booking Form" 
+        method="post" 
+        action="reservation-complete.html"
+        autocomplete="on"
+        autocapitalize=""> 
+    </form>
+
+    <!-- header section starts-->
+        <!-- header section starts-->
+        <header id="header" >
+            <img id="logo" src="images/logo_engage_transp_1024.png" alt="engAGE Living Lab logo" 
+            title="engAGE Livng Lab logo" />
+            
+            <h1>engAGE Living Lab Digital Era Response</h1>
+            <div class="social-icons">
+                <a href="https://twitter.com/engAGELiving" target="_blank">
+                    <img id="headermediaicons" src="images/full_twitter_icon_1024px.png" alt="twitter"/>
+                </a>
+                <a href="https://www.instagram.com/engagelivinglab" target="_blank">
+                    <img id="headermediaicons" src="images/full_insta_icon_1024px.png" alt="instagram" />
+                </a>
+                <a href="https://www.facebook.com/engagelivinglab/" target="_blank">
+                    <img id="headermediaicons" src="images/full_fb_icon_1024px.png" alt="facebook" />
+                </a>
+                <a href="mailto:monica.escobedo@concordia.ca">
+                    <img id="headermediaicons" src="images/full_email_icon_1024px.png" alt="email" />
+                </a>
+    
+           </div>
+</header>
+    <!-- header section ends-->
+
+    <!-- nav section starts -->
+    <nav id="navtop">
+        <ul class="menu">
+            <li><a href="index.html">Home</a></li> 
+            <li class="submenu">
+                <a class="submenu-main-option" href="activities.html">Activities</a>
+                <ul class="submenu-list">
+                    <li><a href="activities-arthives.html">Art Hives</a></li>
+                    <li><a href="activities-digital.html">Digital Skills</a></li>
+                </ul>
+            
+            </li>
+            
+            <li class="submenu">
+                <a class="submenu-main-option" href="about-us.html">About Us</a>
+                <ul class="submenu-list"> 
+                    <li><a href="about-us-team.html">Team</a></li>
+                </ul>
+            </li>    
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <!-- nav section ends -->
+
+    <!-- main section starts-->
+    <main class="art-hives">
+        <div id="digitalskill">
+            <h1>Digital Skill-share</h1>
+            <p>
+                Our goal is that you will be able to stay connected with your community,
+                friends and family from the comfort of your home; through zoom, facebook, email, 
+                or any other digital platform. <br/><br/>Join us every third Tuesday of the month 
+                for a group conversation about technology, and let's explore our questions together. 
+                Everybody is welcome! <br/><br/>If you have a very specific question, you can book 
+                a one-on-one 30-min skill-share using the form below. <br/><br/><br/>
+            </p>
+        </div>
+
+        <div id="bookskillshare">
+            <h2>Book a 30-min digital skill-share</h2>
+            <br/>
+
+        <form id="form">
+        
+
+        <!-- Booking form starts here-->
+        <fieldset> 
+            <legend>&nbsp;&nbsp;Contact Information&nbsp;&nbsp;</legend>
+        <table id="contact_info">
+            <tr><i>(*) Required field</i></tr>
+                <tr>
+                    <td>
+                        <label for="first_name">First Name*:</label>
+                    </td>
+                    <td>
+                        <input type="text" id="first_name" 
+                        size="25" 
+                        maxlength="15" 
+                        autofocus="autofocus"
+                        required="required" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="last_name">Last Name*:</label>
+                    </td>
+                    <td>
+                        <input type="text" id="last_name" 
+                        size="25" 
+                        maxlength="30" 
+                        required/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="email">Email Adress*:</label>
+                    </td>
+                    <td>
+                        <input type="email" id="email" size="40" 
+                        maxlength="40" required="required"
+                        pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                        placeholder="myemail@domain.abc"
+                        /> 
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="phone">Phone number:</label>
+                    </td>
+                    <td>
+                        <input type="phone" id="phone" size="30" 
+                        maxlength="30"
+                        pattern="
+                        ^(1\s*[-\/\.]?)?(\((\d{3})\)|(\d{3}))\s*([\s-./\\])?([0-9]*)([\s-./\\])?([0-9]*)$"
+                        placeholder="1(123) 123-1234 | 123-123-1234"
+                        /> 
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="pref_lang">Preferred language:</label>
+                    </td>
+                    <td>
+                        <input type="radio" id="en" name="prefer_lang"
+                        value="en" checked="checked" />
+                        <label for="en">English</label>
+                        <br />
+                        <input type="radio" id="fr" name="prefer_lang"
+                        value="fr" />
+                        <label for="fr">French</label>
+                        <br />
+                        <input type="radio" id="ot" name="prefer_lang"
+                        value="ot" />
+                        <label for="ot">Other</label>
+                        <input type="text" id="ot" 
+                        size="15" 
+                        maxlength="10"/>
+                    </td>
+                </tr>
+        </table>
+        </fieldset>
+        </br>
+        <fieldset>
+            <legend>&nbsp;&nbsp;Appointment Information&nbsp;&nbsp;</legend>
+            <table id="appoinment_info">
+               
+                <tr>
+                    <td colspan="2"> 
+                    <label>Select a time and date for your one-on-one appointment</label>
+                </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="app_date">Date*:</label>
+                    </td>
+                    <td>
+                        <select id="app_date" required >
+                            <option value="nov">Tuesday, November 3rd</option>
+                            <option value="dec">Tuesday, December 1st</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="app_time">Appointment Time*:</label>
+                    </td>
+                    <td>
+                        <select id="app_time" required>
+                            <option value="first">10:00 am</option>
+                            <option value="second">10:30 am</option>
+                            <option value="third">11:00 am</option>
+                            <option value="fourth">11:30 am</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="topic">Main topic of interest:</label>
+                    </td>
+                    <td>
+                        <input type="radio" id="zoom" name="topic"
+                        value="zoom" checked="checked" />
+                        <label for="zoom">Zoom</label>
+                        <br />
+                        <input type="radio" id="fb" name="topic"
+                        value="fb" />
+                        <label for="fb">Facebook</label>
+                        <br />
+                        <input type="radio" id="email_topic" name="topic"
+                        value="email_topic" />
+                        <label for="email_topic">Email</label>
+                        <br />
+                        <input type="radio" id="ot_topic" name="topic"
+                        value="ot_topic" />
+                        <label for="ot_topic">Other topic</label>
+                        <input type="text" id="ot_topic" 
+                        size="21" 
+                        maxlength="20" />
+                    </td>
+                </tr>
+                    <tr>
+                        <td colspan="2">
+                            <label>Have you tried any of our activities?
+                                <br/><i>check as many as you have!</i> 
+                            </label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <input type="checkbox" id="act1" value="arthive"/>
+                            <label for="act1">Art hive / Music-Art hive</label>
+                            <br />
+                            <input type="checkbox" id="act2" value="sthenri"/>
+                            <label for="act2">St-Henri Art Hive</label>
+                            <br />
+                            <input type="checkbox" id="act3" value="movement"/>
+                            <label for="act3">Movement Hive</label>
+                            <br />
+                            <input type="checkbox" id="act4" value="postcards"/>
+                            <label for="act4">Postcards from the Kitchen</label>
+                            <br />
+                            <input type="checkbox" id="act5" value="science"/>
+                            <label for="act5">Science Shop</label>
+                            <br />
+                            <input type="checkbox" id="act6" value="film"/>
+                            <label for="act6">Film Club</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="feedback">Other comments</label>
+                        </td>
+                        <td>
+                            <textarea id="feedback" cols="30" rows="4" maxlength="200">
+                            </textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="color_pick">Choose your fav color</label>
+                        </td>
+                        <td>
+                            <input type="color" id="color_pick" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <input type="submit" id="submit_reservation"
+                                value="Submit your reservation"/>
+                            <input type="reset" id="clear_form"
+                                value="Clear your form"/>
+                        </td>
+                    </tr>
+                </table>
+            </fieldset>
+         </form>
+            <!-- Booking form ends here-->
+            <div id="digital_email">
+
+             <p>Or send us an email to 
+                <a style='word-break: break-word;' href="mailto:engagelivinglab@concordia.ca">engagelivinglab@concordia.ca</a>
+             </p>
+            </div>
+        </div>
+        <div>
+            <img src="images/digital_skill.png" alt="Cartoon:people connecting digitally" 
+                    title="Cartoon: people connecting digitally" width="50%" />
+        </div>
+
+        <div id="newsletter">
+            <p>Get our newsletter delivered directly to your inbox! &nbsp; &nbsp; &nbsp; &nbsp;
+                <button class="button button1" >
+                    <a href="https://tinyletter.com/EngageLivingLab/" target="_blank">
+                        Subscribe
+                    </a>
+                </button>
+            </p>
+        </div>
+
+    </main>
+    <!-- main section ends -->
+    
+    <!-- right side -->
+    <!-- right side -->
+    <aside id="rightSidebar">
+        <div>
+            <div class="fb-page" data-href="https://www.facebook.com/engagelivinglab" 
+                data-tabs="timeline" data-width="" data-height="" data-small-header="false" 
+                data-adapt-container-width="true" data-hide-cover="false" 
+                data-show-facepile="true"><blockquote cite="https://www.facebook.com/engagelivinglab" 
+                class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/engagelivinglab">Engage Living Lab Digital Era Response</a></blockquote>
+            </div>
+        </div>
+                 
+        <div class="twitter">
+            <a class="twitter-timeline" 
+            href="https://twitter.com/engAGELiving?ref_src=twsrc%5Etfw">Tweets by engAGELiving</a>
+            <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </div>
+    </aside>
+
+
+    <!-- footer section starts -->
+    <footer id="footer">
+        <nav id="navfooter">
+            <ul>
+                <li><a href="cookies.html">Cookies Policy |</a></li>  
+                <li><a href="privacy.html">Privacy Policy |</a></li>
+                <li><a href="terms.html">Terms and Conditions |</a></li>  
+                <li><a href="news.html">News</a></li>  </br>
+                
+            </ul>
+        </nav>
+        </br></br><br/>
+        <p>
+            Email us at: <a href="mailto:monica.escobedo@concordia.ca">engagelivinglab@concordia.ca</a>
+        </p>
+        </br><br/><br/>
+        <p>Copyright 2020 &copy; engAGE Living Lab Digital Era Response. All Rights Reserved.</p>
+    </footer>
+    <!-- footer section ends -->
+</body>
+</html>

@@ -1,0 +1,707 @@
+@charset 'UTF-8';
+
+
+/*CSS document for the ELLDER website
+    developed by: Cristian Bildea, Laurence Poirier, OSMAN MOHAMED and Monica Escobedo
+    Script Date: October 14,2020
+
+    Concordia Red: #912338;
+
+*/
+/* Universal selector */
+*{
+    margin:0;
+    padding:0;
+}
+
+
+/*styling the body selector*/
+body{
+    margin:0;
+    padding:0;
+    background-color: white;
+    font-family: 'Quattrocento Sans', sans-serif;
+
+}
+
+.container {
+    display:flex;
+    flex-wrap: wrap;
+}
+
+#main_contact {
+    background-image: url("images/ELLDER-contact-image.png");
+}
+#header{
+     width:100%;
+     padding-bottom: 0;
+}
+#header, #logo{
+    min-height: 130px;
+    width: 480x;
+    float:left;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+#logo{
+    margin-top: 18x;
+    filter:brightness(900%), contrast(900%);
+    width: 100%;
+    height:auto;
+    max-height: 200px;
+}
+
+
+
+#header h1{
+    display: block;
+    float:left;
+    margin-top: 15px;
+    padding:4px;
+   
+    font-size: 42px;
+    /* font-family: 'Lato', sans-serif; */
+    /*font-family: 'Maven Pro', sans-serif; */
+    font-family: 'Quattrocento Sans', sans-serif;
+    /*font-family: 'Cabin', sans-serif;*/
+    text-shadow:
+        0 1px 0 #ccc,
+        0 2px 0 #c5c5c5,
+        0 3px 0 #bbb,
+        0 4px 0 #b5b5b5,
+        0 5px 0 #aaa,
+        0 6px 0 #a5a5a5,
+        0 7px 3px rgba(0, 0, 0, 0.3),
+        0 10px 10px rgba(0, 0, 0, 0.2),
+        0 10px 10px rgba(0, 0, 0, 0.15),
+        0 15px 15px rgba(0, 0, 0, 0.2);
+    color: black;
+}
+#headermediaicons{
+    display: block;
+    float:right;
+    margin-top: 50px;
+    padding:5px;
+    height:50px;
+    
+}
+#headermediaicons:hover{
+    filter: drop-shadow(8px 6px 5px gray);
+}
+#navtop{
+    clear:both;
+    width: 100%;
+    min-height: 60px;
+    background-color:rgb(70, 70, 70);
+    text-decoration: none;
+    text-align: center;
+    margin-bottom: 2px;
+   
+}
+#navtop ul{
+    list-style: none;
+    padding: auto, 15px;
+   
+}
+#navtop ul li {
+    float: left;
+
+}
+#navtop ul li a:link{
+    display:block;
+    margin-top: 2px;
+    padding: 14px;
+    background-color:rgb(70, 70, 70);
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size:25px;
+    color:white;
+    font-weight: lighter;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+#navtop ul li a:hover{
+    display:block;
+    background-color:rgba(231, 227, 227, 0.925);
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 25px;
+    color:black;
+    /*height: 28px; */
+    font-weight: lighter;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Cristian Menu start */
+  .twitter {    
+    height: 500px;
+    overflow: auto;
+}
+#nav .menu {
+    display: flex;
+}
+.submenu {
+    position: relative;
+}
+.submenu-list {
+    position: absolute;
+    top: 60px;
+    left:0;
+    display: none;  
+    visibility: hidden;
+    opacity: 0;
+    min-width: 160px;
+    z-index: 1;
+    width: 100%;
+    box-sizing: border-box;
+    bottom: -5px; 
+    transition: all 0.5s ease;
+    
+}
+.menu li a{
+    color:whitesmoke;
+    
+}
+.submenu-main-option:hover ~ .submenu-list,
+.submenu-list:hover {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    visibility: visible;
+    opacity: 1;
+}
+.submenu-list li a {
+    margin-top: 0 !important;
+    color:whitesmoke;   
+}
+
+/* Cristian Menu ends*/
+
+/* style for horizontal rule */
+hr {
+    width: 30%;
+    height:2px;
+    border-width:0;
+    color:rgba(128, 128, 128, 0.420);
+    background-color:rgba(128, 128, 128, 0.400);
+    margin-left: 290px;
+}
+
+/* style for hr ends here */
+
+/* main */
+#main, #main h2, #main_aboutus, #main_team, #main_contact, 
+#main_contact h2, #main_home, #newsletter{
+    /*width:65%; */
+    float:left;
+    height:auto;   
+
+}
+
+#newsletter {
+    width:65%; 
+    float:left;
+    height:auto;
+    padding-left: 20px;
+
+}
+
+main {
+    width: 100% ;
+    padding-left: 0;
+}
+
+
+
+/* start styling main section activities page - Cristian Bildea */
+
+#conversation_img img,
+#activities_img img{
+    max-width: 100%;
+    height: auto;
+    min-width: 100%;
+}
+.activities-page{   
+    float:left;
+    height:auto;
+    padding-left: 20px;
+}
+
+.activities-page #activities {
+    overflow: hidden;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+   
+}
+
+.activities-page #activities li{
+    float: left;
+    width: 100%;
+    padding: 30px 50px;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.activities-page #activities li a ,
+.activities-page #activities li .activity-no-click{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+}
+
+.activities-page #activities li a:hover {
+    text-decoration: underline;
+}
+
+
+.activities-page #activities li img {
+    float: inherit;
+    width: 170px;
+    height: 170px;
+
+}
+
+.activities-page #activities li h1 {
+    margin-left: 20px;
+    text-decoration: none;
+    font-size: 25px;
+    font-family: inherit;
+    
+}
+#home_intro {
+    margin: 100px auto 80px auto;
+}
+
+/*end styling main section activities page */
+
+
+/* start styling main section art-hives page - Cristian Bildea */
+.art-hives{
+    width:66%; 
+    float:left;
+    height:auto;
+    padding-left: 20px;
+} 
+
+.art-hives h1, #digitalskill h1, #bookskillshare h2, #main_aboutus h1, #main_team h1 {
+    font-size: 45px;
+    font-family: inherit;
+    margin-bottom: 25px;
+    margin-top: 15px;
+}
+#bookskillshare h2, #main_home h2{
+    font-size:35px;
+}
+.hives-headline {
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+    flex-wrap: wrap;
+}
+
+.text-center {
+    text-align: left;
+    margin-bottom: 25px;
+}
+
+.hives-headline p{
+   
+    padding-left: 30px;
+    font-family: inherit;
+    text-align: justify;
+    font-size: 30px;
+    box-sizing: border-box;
+}
+#intro_calendar{
+    margin: 20px auto 30px auto;
+}
+#whatIsArtHive p, #digitalskill p, .aboutus p, #main_team p, #intro_calendar{
+    font-size: 25px;
+    font-family: inherit;
+}
+#contactus{
+    margin-left:40px;
+    margin-top: 20px;
+    padding: 8px;
+    font-size: 35px;
+    font-family: inherit;
+    text-align: center;
+    background-color: rgba(255, 214, 126, 0.897);
+}
+.info {
+    margin: 20px /*50px 20px 20px*/;
+    padding-bottom: 40px;
+}
+.info a{
+    font-size: 25px;
+}
+.info ul li{
+    margin-left:10px;
+    display: block;
+    float:left;
+}
+.info ul li a img{
+    border-radius: 50px;
+    height: 50px;
+}
+.info ul li a img:hover{
+    filter: grayscale(100%);
+}
+#stronger{
+    border-left: 6px solid rgba(94, 94, 94, 0.801);
+    height: auto;
+    position: inherit;
+    margin-left: -3px;
+    padding-left: 20px;
+    margin-bottom: 10px;
+    top: 0;
+    font-size: 27px;
+    text-align: justify;
+    max-width: 87vw;
+}
+
+#smaller {
+    font-size: 22px;
+}
+
+#whatIsArtHive {
+    margin-bottom: 25px;
+}
+.hives-headline > * {
+    width: 100%;
+}
+
+#howToJoinArtHive {
+    text-align: left;
+    margin-top: 30px;
+}
+.howtoFlex {
+    display: flex;
+    align-items: start;
+}
+
+.howtoFlex p, .howtoFlex figcaption {
+    padding-right: 20px;
+    margin-top: 100px;
+    font-size: 30px;
+    font-family: inherit;
+
+}
+.howtoFlex figure img {
+    width: 40%;
+    float: right;
+    
+}
+
+.howtoFlex > * {
+    width: 90%;
+}
+
+/*ends styling main section art-hives page */
+
+ /* to format the main portion on the contact tab */
+#main_contact, #main_home {
+    background-repeat: no-repeat;
+    background-position-x:left;
+    background-position-y:240px;
+    background-size: 750px 300px;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+
+}
+
+#main section, #main_contact section{
+    padding-top: 150px;
+    padding-bottom: 50px;
+    font-size: 2em;
+    text-align: center;
+    font-weight: bold;
+    color:brown;
+}
+#main address, #main_contact address{
+    font-size:2em;
+}
+
+#main h2, #main_contact h2{
+    font-size: 2rem;
+}
+#main h1, #main_contact h1 {
+    font-size: 1.5rem;
+    font-weight: normal;
+}
+#mainimage{
+    max-height: auto;
+    max-width: 70%;
+    padding-left: 100px;
+}
+#mainmediaicons{
+    display: block;
+    float:left;
+    padding:15px;
+    height:50px;
+}
+
+/* style rules for table by Laurence Poirier*/
+table {
+    border: 2px solid #800020;
+    border-collapse: collapse;
+    margin: 0 auto;
+   
+}
+
+table th, td {
+    border: 3px solid #800020;
+    padding: 2%;
+    font-size: 1.0rem;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 3%;
+}
+
+table th {
+    background-color: #B1B1B1;
+    color: #0A0708;
+    font-size: 1.15rem;
+}
+
+table tr:nth-child(odd) {
+    opacity: 0.9;
+    filter: alpha(opacity=20);
+    background-color: #E4E5E8;
+}
+
+/* end of team table formatting, Laurence */
+
+/* Start: Calendar, table formatting, Monica */
+#day th{
+    
+    background-color: rgb(245, 225, 158);
+    padding: 25px 15px 25px 15px;
+    border: 2px solid rgb(245, 225, 158);
+}
+.table_calendar, .table_calendar tr{
+    border: 2px solid rgb(245, 225, 158);
+    border-collapse: collapse;
+    float:center;
+    border: 2px solid rgb(245, 225, 158);
+    padding: 2px;
+    margin: 1px;
+    background-color: #fff;
+    clear: both;
+}
+.table_calendar caption{
+    text-emphasis: bold ;
+    font-size: 30px;
+    font-weight: bold;
+    border: 2px solid rgb(245, 225, 158);
+    padding: 10px;
+}
+
+.table_calendar, td.calendar_cell, .table_calendar th{
+    border: 2px solid rgb(245, 225, 158);
+    padding: 5px;
+    background-color: white;
+
+}
+.table_calendar td.calendar_cell:hover{
+    border: 2px solid rgb(245, 225, 158);
+    padding: 10px;
+    background-color: rgb(215, 219, 219);
+    color: rgb(50, 66, 207);
+
+}
+td.calendar_emptycell{
+    border: 2px solid rgb(245, 225, 158);
+    padding: 60px;
+    background-color:  rgba(245, 225, 158, 0.8);
+}
+
+/* End: Calendar, table formatting, Monica */
+
+
+.map{
+
+    border:5px solid #373684;
+    
+}
+/*
+#subscribe {
+    width: fit-content;
+    float: left;
+    border: 2px none khaki;
+    padding: 10px;
+    margin: 10px;
+    background-color: khaki;
+}
+*/
+
+#newsletter {
+    display: block;
+    width: fit-content;
+    background-color: rgb(245, 225, 158);
+    margin: 40px 0 10px 5px;
+    padding: 20px;
+    border-radius: 8px;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.button {
+    border: none;
+    color: white;
+    padding: 16px 24px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    margin: 2px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    
+    border-radius: 25px;
+}
+
+.button1 {
+    text-decoration: none;
+    background-color: black;
+    color:white;
+    font-weight: bold;
+
+}
+.button1 a{
+    text-decoration: none;
+    color: rgb(187, 187, 187);
+}
+
+  
+.button1:hover {
+    background-color: rgb(231, 187, 42);
+    color: black;
+    font-weight: bold;
+}
+.button1:hover a{
+    
+    color: rgb(48, 48, 48);
+}
+#rightSidebar{
+    float: right;
+    margin-bottom: 10px;
+    width: 100%;
+    padding-left: 9%;    
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    box-sizing: border-box;
+}
+
+
+
+#footer{
+    width: 100%;
+    height:auto;
+    min-height: 200px;
+    background-color:rgb(70, 70, 70);
+    /*background-color:rgba(100, 13, 13, 0.9);*/
+    color:white;
+    text-align: center;
+    margin-top: 5px;
+    clear:both;
+    
+}
+#navfooter{
+    width: 100%;
+    margin: 0 auto;
+    text-decoration: none;
+
+    
+}
+#navfooter ul{
+    list-style: none;
+    /*margin-left:25%; */
+    text-align: center;
+    /*padding-left: 2px;
+    padding-top: 50px;*/
+    padding: 0;
+    margin: 0;
+   
+}
+
+#navfooter ul li{
+    /*float: left;
+    display:block;
+    text-align:center;*/
+    display: inline-block;
+    margin-top: 10px;
+}
+#navfooter ul li a {
+    color: white;
+}
+
+#navfooter ul li a:link{
+    display:block;
+    margin: 5px;
+    text-decoration: none;
+    font-size: large;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+#navfooter ul li a:hover{
+    display:block;
+    background-color:whitesmoke;
+    margin: 0 auto;
+    text-decoration: none;
+    font-size: large;
+    color:black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#footer p, #footer p a{
+    font-size: large;
+    color: white;
+    font-size: 1.1rem;
+    padding-bottom: 10px;
+}
+
+#digital_email {
+    margin-top: 100px;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: wheat;
+    text-align: center; 
+}
+
+#form{
+    border:3px, solid, lightgray;
+    background-color:lightgray;
+    color:rgb(53, 51, 51);
+    border-radius: 10px 10px 10px 10px;
+    font-family: sans-serif;
+    font-size: large;
+    font-weight: normal;
+
+}
+#form td{
+    border: 0.5px solid gray;
+    padding: 2%;
+    font-size: 1.0rem;
+    font-weight: bold;
+    font-family: sans-serif;
+    padding: 3%;
+}
+#form #contact_info{
+    width: 100%;
+    border: 0.5px solid gray;
+   
+   
+}
+#form #appointment_info{
+    
+    width: 100%; 
+    border: 0.5px solid gray;
+}

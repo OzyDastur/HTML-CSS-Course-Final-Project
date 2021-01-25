@@ -1,0 +1,53 @@
+@charset 'UTF-8';
+
+/*CSS document for the ELLDER website
+    developed by: Cristian Bildea, Laurence Poirier, OSMAN MOHAMED and Monica Escobedo
+    Script Date: October 21,2020
+
+    Concordia Red: #912338;
+
+*/
+
+@media (min-width:640px) {    
+   
+    #rightSidebar {
+        width: 32%;
+    }
+
+    
+    main{
+        width: 66%;
+        padding-left: 20px;
+    }
+
+    .activities-page #activities li {
+        width: 50%;
+    }
+
+    .hives-headline > * {
+        width: 50%;
+    }
+
+
+}
+
+@media (min-width:768px) {
+    
+    #logo {
+        margin-top: 18x;
+        filter:brightness(900%), contrast(900%);
+        width: 13%;
+        height: 120%;
+    }
+
+   
+}
+
+@media (min-width:1280px) {
+    
+    .social-icons{
+        float: right;
+        position: absolute;
+        right: 0;
+    }
+}
